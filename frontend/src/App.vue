@@ -8,6 +8,7 @@ import type { OverviewResponse } from "./types";
 import FeatureStrip from "./components/FeatureStrip.vue";
 import MetricGrid from "./components/MetricGrid.vue";
 import OperationsTable from "./components/OperationsTable.vue";
+import TournamentPanel from "./components/TournamentPanel.vue";
 
 const overview = ref<OverviewResponse>(createFallbackOverview());
 const notice = ref(REQUEST_MESSAGES.overviewFallback);
@@ -45,6 +46,7 @@ onMounted(async () => {
         <MetricGrid :items="overview.kpis" />
       </div>
       <FeatureStrip :items="overview.features" />
+      <TournamentPanel />
       <section class="work-panel">
         <h2>运营任务流</h2>
         <OperationsTable :records="overview.records" />

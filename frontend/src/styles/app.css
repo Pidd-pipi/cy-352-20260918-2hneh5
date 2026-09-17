@@ -151,6 +151,95 @@ body {
   font-weight: 700;
 }
 
+.tournament-panel .panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.tournament-panel .panel-head h2 {
+  margin: 0 0 6px;
+}
+
+.panel-sub {
+  margin: 0;
+  color: color-mix(in srgb, #19212e 64%, #3268b8 36%);
+}
+
+.tournament-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.tournament-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid color-mix(in srgb, #19212e 12%, transparent);
+  border-radius: 8px;
+  padding: 16px;
+  background: color-mix(in srgb, #ffffff 70%, #f4f7fb 30%);
+}
+
+.tournament-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card-meta {
+  margin: 0;
+  color: color-mix(in srgb, #19212e 62%, #3268b8 38%);
+  font-size: 14px;
+}
+
+.card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  font-size: 13px;
+}
+
+.card-stats .remaining {
+  color: #cf5c36;
+  font-weight: 700;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dialog-tip {
+  margin: 0 0 12px;
+  color: color-mix(in srgb, #19212e 64%, #3268b8 36%);
+  font-size: 13px;
+}
+
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.group-box {
+  border: 1px solid color-mix(in srgb, #19212e 12%, transparent);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: color-mix(in srgb, #3268b8 6%, transparent);
+}
+
+.group-box ol,
+.player-order {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
 @media (max-width: 860px) {
   .topbar {
     align-items: flex-start;

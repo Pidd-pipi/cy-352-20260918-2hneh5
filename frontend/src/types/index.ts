@@ -30,3 +30,31 @@ export interface OverviewResponse {
   kpis: KpiItem[];
   records: OperationRecord[];
 }
+
+export interface TournamentGroup {
+  name: string;
+  players: string[];
+}
+
+export interface Tournament {
+  id: string;
+  name: string;
+  game: string;
+  startTime: string;
+  capacity: number;
+  groupSize: number;
+  registeredCount: number;
+  remaining: number;
+  status: "open" | "locked";
+  groups: TournamentGroup[];
+  players: string[];
+  createdAt: string;
+}
+
+export interface CreateTournamentPayload {
+  name: string;
+  game: string;
+  startTime: string;
+  capacity: number;
+  groupSize: number;
+}

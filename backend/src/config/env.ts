@@ -1,5 +1,6 @@
 export const env = {
   port: Number(process.env.PORT ?? 29512),
+  databaseUrl: process.env.DATABASE_URL ?? "",
   dbHost: process.env.DB_HOST ?? "localhost",
   dbPort: Number(process.env.DB_PORT ?? 27017),
   dbName: process.env.DB_NAME ?? "app",
