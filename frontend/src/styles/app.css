@@ -151,6 +151,35 @@ body {
   font-weight: 700;
 }
 
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-tab {
+  border: 1px solid color-mix(in srgb, #19212e 18%, transparent);
+  background: transparent;
+  color: #19212e;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-tab:hover {
+  background: color-mix(in srgb, #3268b8 12%, transparent);
+}
+
+.nav-tab-active {
+  background: #3268b8;
+  border-color: #3268b8;
+  color: #fff;
+}
+
 @media (max-width: 860px) {
   .topbar {
     align-items: flex-start;

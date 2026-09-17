@@ -33,7 +33,7 @@ export const localFeatures: FeatureItem[] = [
     "id": 5,
     "title": "活动赛事发布",
     "description": "门店发布桌游赛事活动（如狼人杀锦标赛、剧本杀推理赛），玩家报名参赛，系统自动分组和记录比赛成绩，颁发虚拟奖牌。",
-    "status": "可导出",
+    "status": "已上线",
     "metric": "28 条"
   }
 ];
